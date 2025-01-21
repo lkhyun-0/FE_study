@@ -1,0 +1,11 @@
+/* 노말라이즈 시작*/
+a {
+    color: inherit;/*a의 컬러는 기본 파란색이다 다른 요소들(text)와 같게 만들어주는 작업이다 inherit는 부모의 속성을 상속받는다는 뜻이다 !! body 폰트 컬러와 동일하게 한다 */
+    text-decoration: none; /* a의 기본값은 underline이 나타남 이걸 빼준다 */
+}
+body, ul, li {  /* 이 태그들은 기본적으로 margin 과 padding 값이 있음 margin padding 을 0으로 맞춰줌 */
+    margin: 0;
+    padding: 0;
+    list-style: none; /* 리스트의 앞 점 등 스타일이 있는 걸 빼준다 */
+}
+/* 노말라이즈 끝 */
