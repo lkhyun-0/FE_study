@@ -1,0 +1,53 @@
+/*노멀라이징*/
+a {
+    text-decoration: none;
+    color : inherit;
+}
+body, ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.menu-box-1 {   /* 메뉴박스 */
+    text-align: center;
+
+}
+.menu-box-1 ul {
+    background-color: grey;
+}
+
+.menu-box-1 > ul { /*메뉴*/
+    display: inline-block;
+    border-radius: 10px;
+    padding: 0 20px;
+}
+
+.menu-box-1 ul > li {  /*1차 메뉴 아이템*/
+    display: inline-block;
+    position: relative;
+
+}
+.menu-box-1 ul > li > a { /*메뉴 박스랑 ul 사이를 끊어주면 몇차 메뉴든 다 적용*/
+    padding: 10px;
+    display: block;
+}
+.menu-box-1 ul > li:hover > a {
+    background-color: black;
+    color: white;
+}
+
+.menu-box-1 > ul > li > ul {    /*2차 메뉴 숨김*/
+    position: absolute;
+    top : 100%;
+    left:0;
+    display: none;
+
+}
+
+
+.menu-box-1 > ul > li:hover > ul {/*1차 메뉴 아이템에 호버시 2차 메뉴보여줌*/
+    display: block;
+
+}
+
