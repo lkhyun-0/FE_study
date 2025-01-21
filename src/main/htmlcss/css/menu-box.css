@@ -1,0 +1,28 @@
+a {
+    text-decoration: none;
+    color:inherit;
+}
+nav {   /* 메뉴박스 안에 있는 텍스트 가운데 정렬 */
+    background-color: grey;
+    text-align: center;
+}
+nav > section {/* 메뉴 !!*/
+    background-color: red;
+    display : inline-block;
+    border-radius: 20px; /*배경색 지우면 적용되어 있음*/
+
+}
+nav > section > div { /*메뉴아이템*/
+    background-color: pink;
+    display : inline-block;
+
+}
+nav > section > div > a { /*메뉴아이템 텍스트*/
+    /*a의 기본 display : inline임 */
+    display : block;
+    padding : 20px;
+}
+nav > section > div:hover > a { /* 호버시변경*/
+    color : white;
+    background-color: black;
+}
